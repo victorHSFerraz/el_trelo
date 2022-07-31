@@ -44,3 +44,4 @@ userSchema.methods.validatePassword = function (password: string) {
 }
 
 export default model<UserDocument>('User', userSchema);
+
