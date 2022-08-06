@@ -8,7 +8,7 @@ const userSchema = new Schema<UserDocument>(
         email: {
             type: String,
             required: [true, 'Email is required'],
-            validator: [validator.isEmail, 'invalid email'],
+            validate: [validator.isEmail, 'invalid email'],
             createIndexes: { unique: true }
         },
         username: {
