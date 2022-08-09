@@ -25,7 +25,6 @@ app.post('/api/users/login', usersController.login);
 
 app.get('/api/user', authMiddleware, usersController.currentUser);
 
-
 io.on('connection', () => {
     console.log("connect");
 })
